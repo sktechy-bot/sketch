@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <textarea id="a"></textarea>
+    <input id="b" type="submit" onclick="f()">
+  <script>
+function f() {
+  let xtp = new XMLHttpRequest();
+  xtp.addEventListener("load",g);
+  xtp.open("GET", "https://garyc.me/");
+  xtp.send();
+}
+
+function g() {
+  document.querySelector("#a").innerText = this.responseText;
+}
+  </script>
+  </body>
+</html>
