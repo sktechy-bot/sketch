@@ -9,7 +9,7 @@
 function f() {
   let xtp = new XMLHttpRequest();
   xtp.addEventListener("load",g);
-  xtp.open("GET", "https://garyc.me/");
+  xtp.open("GET", "https://corsproxy.io/?" + encodeURIComponent("https://garyc.me/");
   xtp.send();
 }
 
