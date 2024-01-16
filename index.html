@@ -9,8 +9,8 @@
 function f() {
   let xtp = new XMLHttpRequest();
   xtp.addEventListener("load",g);
-  xtp.open("GET", "https://garyc.me/sketch/get.php");
-  xtp.send();
+  xtp.open("POST", "https://garyc.me/sketch/get.php");
+  xtp.send(document.querySelector("#a").value);
 }
 
 function g() {
